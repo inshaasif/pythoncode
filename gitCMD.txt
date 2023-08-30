@@ -1,0 +1,9 @@
+git clone URL
+
+git add class1.py    ### git add single file
+
+git pull
+git status  	     ###
+git add .
+git commit -m " anything update"
+git push origin main
