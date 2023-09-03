@@ -86,3 +86,49 @@ print(list_2)      #del is also remove specified index
 list_3= ["sun", "moon", "star"]
 list_3.clear()
 print(list_3)        #clear List
+
+list_4= ["insha", "raheel", "saad"]
+for x in list_4:
+    print(x)       #Loop List
+
+list_5= ["anas", "arqam", "ahsan"]
+for i in range(len(list_5)):
+    print(list_5[i])        #Loop Through Index
+
+list_6= ["safwan", "azhan", "rohail"]
+i= 0
+while i < len(list_6):
+    print(list_6[i])
+    i = i + 1        #While Loop
+
+list_7= ["hameed", "raheem", "faheem"]
+[print(x) for x in list_7]      #List Comprehension Looping
+
+list_8= ["apple", "banana", "cherry", "Kiwi", "mango"]
+newlist= []
+for x in list_8:
+    if "a" in x:
+        newlist.append(x)
+print(newlist)       #List Comprehension
+
+list_9= ["Dell", "Hp", "Lenovo", "Sony"]
+newlist= [x for x in list_9 if x != "Dell"]
+print(newlist)      #Condition
+
+list_10= [x for x in range(10)]
+print(list_10)      #Iterable
+
+newlist= [x for x in range(10) if x < 5]
+print(newlist)      #same example with condition
+
+list_11= ["graphics", "animation", "designing"]
+newlist= [x.upper() for x in list_11]
+print(newlist)      #Expression
+
+list_12= ["graphics", "animation", "designing"]
+newlist= ['hello' for x in list_12]
+print(newlist)   #same example with condition
+
+list_13= ["ameen", "raheem", "saleem", "kareem"]
+newlist= [x if x != "raheem" else "faheem" for x in list_13]
+print(newlist)     #same example with condition
