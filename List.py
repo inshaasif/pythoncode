@@ -132,3 +132,31 @@ print(newlist)   #same example with condition
 list_13= ["ameen", "raheem", "saleem", "kareem"]
 newlist= [x if x != "raheem" else "faheem" for x in list_13]
 print(newlist)     #same example with condition
+
+
+list_14= ["shahmir", "hammad", "khalid", "suleman", "arham"]
+list_14.sort()
+print(list_14)        #sort (sort alphabetically)
+
+list_15= ["88", "45", "97", "21", "66"]
+list_15.sort()
+print(list_15)        #sort (sort numerically)
+
+list_16= ["88", "45", "97", "21", "66"]
+list_16.sort(reverse = True)
+print(list_16)        #Descending 
+
+def myfunc(n):
+    return abs(n - 500)
+
+list_17= [88, 45, 50, 97, 21, 66] 
+list_17.sort(key= myfunc)
+print(list_17)      #Customize Sort Function 
+ 
+list_18= ["shahmir", "Hammad", "Khalid", "suleman", "Arham"]
+list_18.sort()
+print(list_18)    #case Insensitive
+
+list_19= ["Anydesk", "Facebook", "Github", "google", "yahoo"]
+list_19.sort(key= str.lower)
+print(list_19)   #Case insensitive (lower)
