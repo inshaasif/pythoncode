@@ -160,3 +160,35 @@ print(list_18)    #case Insensitive
 list_19= ["Anydesk", "Facebook", "Github", "google", "yahoo"]
 list_19.sort(key= str.lower)
 print(list_19)   #Case insensitive (lower)
+
+list_20= ["Pakistan", "India", "SriLanka", "Bangladesh"]
+list_20.reverse()
+print(list_20)    #Reverse Order
+
+list_21= ["23", "33", "44", "65"]
+mylist = list_21.copy()
+print(mylist)    #Copy List
+
+list_22= ["elephant", "lion", "tiger", "cat"]
+mylist= list(list_22)
+print(mylist)    #Another way of copy list
+
+Var_1= ["art", "cart", "part"]
+var_2= ["12", "25", "35"]
+var_3= Var_1 + var_2
+print(var_3)      #Join List
+
+Var_4= ["a", "b", "c"]
+var_5= ["1", "2", "3"]
+
+for x in var_5:
+    Var_4.append(x)
+
+print(Var_4)     #Another way of join list (append)
+
+var_6= ["arqam", "arham", "aslam", "zaid"]
+var_7= ["22", "41", "99", "13"]
+
+var_6.extend(var_7)
+print(var_6)      #Another way of join list (extend)
+

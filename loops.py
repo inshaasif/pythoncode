@@ -18,6 +18,7 @@ for color in colors:
     for i in color:
         print(i)
 
+#Range
 for x in range(6):
     print(x)      #when u use range function it starts from 0 and end before the value u enter. 
 
@@ -28,6 +29,7 @@ list_1= ["ahmed", "rehman", "rizwan", "salman", "kamran"]
 for x in list_1:
     print(x)        #This is mechanism of For loop.
 
+#Break
 list_2= ["ameen", "saleem", "kareem", "raheem"]
 for a in list_2:
     print(a)
@@ -40,8 +42,24 @@ for b in list_3:
         break
     print(b)       #but this time the break comes before the print
 
+#Continue
 list_4= ["raheel", "insha", "saad"]
 for Z in list_4:
     if Z == "insha":
         continue
     print(Z)      #With this we can stop the current iteration and continue from the next.
+
+list_5= ["apple", "banana", "kiwi", "guava"]
+for x in list_5:
+    if x == "kiwi":
+        continue
+    print(x)    
+
+
+
+class_1= ["raheel", "insha", "saad"]
+for x in class_1:
+    print(x)
+    for i in x:
+        print(i)     #Nested Loop
+
